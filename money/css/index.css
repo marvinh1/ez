@@ -1,0 +1,29 @@
+.header {
+        height: 610px;
+        background-image: url("../img/bills-small.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+}
+.header-navbar-links {
+        color:white;
+        float:right;
+        margin-top: 30px;
+}
+.header-navbar-links li{
+        float: left;
+        list-style-type: none;
+        margin-left: 25px;
+}
+.header-brand{
+        color:  rgb(255,255,255);
+        text-decoration: none;
+        font-size: 150%;
+        font-weight: bold;
+        display: block;
+        margin-top: -4%;
+
+}
+.header-brand-wrapper{
+        margin-top: 30px;
+        float: left;
+}
