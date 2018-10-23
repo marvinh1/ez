@@ -1,0 +1,14 @@
+body {
+        font-family: "Roboto", sans-serif;
+        color: #222;
+        padding: 5px;
+        -webkit-columns: 300px 2;
+                columns: 300px 2;
+}
+
+img {
+        max-width: 100%;
+        height: auto;
+}
+
+@import "modules/__header-text.css"

@@ -1,6 +1,8 @@
 body {
         font-family: "Roboto", sans-serif;
         color: #222;
+        padding: 5px;
+        columns: 300px 2;
 }
 
 img {
