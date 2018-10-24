@@ -1,7 +1,10 @@
 var gulp = require("gulp"),
     watch = require("gulp-watch"),
     postcss = require("gulp-postcss"),
-    autoprefixer = require("autoprefixer");
+    autoprefixer = require("autoprefixer"),
+    cssvars = require("postcss-simple-vars"),
+    nested = require("postcss-nested"),
+    postcssImport = require("postcss-import");
     
     gulp.task("default", function() {
         console.log("Default Task");
@@ -13,7 +16,7 @@ var gulp = require("gulp"),
 
     gulp.task("css", function() {
        return gulp.src("./money/css/style.css")
-        .pipe(postcss([autoprefixer]))
+        .pipe(postcss([postcssImport, nested, cssvars, autoprefixer]))
         .pipe(gulp.dest("./money/temp/styles"));
     });
 
